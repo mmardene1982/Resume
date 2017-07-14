@@ -100,8 +100,8 @@ bio.display = function(){
 	$("#header").append(formattedImage,formattedMessage);
 	$("#header").append(HTMLskillsStart);
 
-	for(var skill in bio.skills) {
-		var formattedSkills = HTMLskills.replace("%data%",bio.skills[skill]);
+	for(var i=0 ; i<bio.skills.length; i++) {
+		var formattedSkills = HTMLskills.replace("%data%",bio.skills[i]);
 		$("#skills").append(formattedSkills);
 	}
 
