@@ -13,7 +13,9 @@ h6 {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
 }
-
+body{
+  background color: gray;
+}
 .clear-fix {
   overflow: auto;
 }
@@ -155,6 +157,11 @@ a {
   padding: 2.5% 5%;
 }
 
+.flex-item{
+  font-size: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 ul {
   list-style-type: none;
 }
@@ -180,6 +187,11 @@ span {
 #footerContacts li{
   display: inline-block;
   padding: 20px;
+}
+#topContacts{
+  padding-top: 10px;
+  padding-bottom: 10px;
+
 }
 .inbtn{
   padding: 25px;
