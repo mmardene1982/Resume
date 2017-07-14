@@ -178,7 +178,8 @@ span {
   text-align: center;
 }
 #footerContacts li{
-  display: grid;
+  display: inline-block;
+  padding: 20px;
 }
 .inbtn{
   padding: 25px;
