@@ -130,8 +130,8 @@ work.display = function(){
 	var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 	$(".work-entry:last").append(formattedDescription);
 }
-}
-work.display()
+};
+work.display();
 
 projects.display = function(){
 	for (var project=0 ; project< projects.projects.length ; project++){
@@ -147,8 +147,8 @@ projects.display = function(){
 			$(".project-entry:last").append(formattedImage);
 		}
 	}
-}
-projects.display()
+};
+projects.display();
 
 education.display = function() {
 	for(var item =0 ; item< education.schools.length ; item++){
@@ -170,8 +170,8 @@ education.display = function() {
 			onlineURL = HTMLonlineURL.replace("%data%" , education.onlineCourses[info].url);
 			$(".education-entry:last").append(onlineTitle + onlineShool , onlineDates , onlineURL);
 			}
-}
-education.display()
+};
+education.display();
 
 // // $(document).click(function(loc) {
 // //   var x = loc.pageX;
