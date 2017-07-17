@@ -11,7 +11,7 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: 'Orbitron', sans-serif;
+  font-family: sans-serif;
 }
 
 .clear-fix {
@@ -25,6 +25,8 @@ h6 {
 }
 
 h1 {
+display: none;
+  font-family: 'Orbitron';
   font-size: 40px;
   color: #f5a623;
   line-height: 48px;
@@ -32,6 +34,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'Orbitron';
   font-weight: bold;
   font-size: 24px;
   color: #999;
@@ -40,6 +43,7 @@ h2 {
 }
 
 h3 {
+  font-family: 'Orbitron';
   font-style: italic;
   font-size: 20px;
   color: #000;
@@ -47,6 +51,7 @@ h3 {
 }
 
 h4 {
+  font-family: 'Orbitron';
   font-weight: bold;
   font-size: 14px;
   color: #4a4a4a;
@@ -60,7 +65,6 @@ h5 {
   padding: 10px 5%;
 
 }
-
 
 .date-text {
   font-style: italic;
@@ -131,7 +135,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: black;
 }box {
   display: -webkit-flex;
   display: flex;
@@ -139,6 +143,36 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
+}
+#header h1 {
+  display: none; 
+  position: relative;
+  -webkit-animation: mymove 3s ;
+  animation: mymove 3s;
+}
+@-webkit-keyframes mymove {
+    from {top: -100px;}
+    to {top: 0px;}
+}
+
+@keyframes mymove {
+    from {top: -100px;}
+    to {top: 0px;}
+}
+#header #role{
+  display: none;
+  position: relative;
+  -webkit-animation: roleMove 3s ;
+  animation: roleMove 3s;
+}
+@-webkit-keyframes roleMove {
+    from {right: -100px;}
+    to {right: 0px;}
+}
+
+@keyframes roleMove {
+    from {right: -100px;}
+    to {right: 0px;}
 }
 
 .flex-column {
@@ -221,12 +255,22 @@ span {
   }
   .biopic {
     width: 150px;
+
   }
   .welcome-message {
     display: none;
   }
 }
 
+.btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    background-color: white;
+    margin:auto;
+    display:block;
+    font-size: 13px; 
+}
 #map {
   display: block;
   height: 100%;
